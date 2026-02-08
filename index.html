@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geminomi ジ — Portfolio & Cursos</title>
+    <meta name="description" content="Arte digital e tradicional por Letícia de Luziânia-GO. Portfólio, publicações, cursos e downloads gratuitos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header>
+        <div class="nav" role="navigation" aria-label="Principal">
+            <a class="brand" href="#inicio">
+                <div class="logo" aria-hidden="true"></div>
+                <div class="name">Geminomi<span class="script">ジ</span></div>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#publicacoes">Publicações</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="cta" onclick="document.querySelector('#contato').scrollIntoView({behavior:'smooth'})">Fale comigo</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="inicio" class="hero">
+        <div>
+            <div class="badge"><span class="dot"></span> Ilustração digital • Tradicional • Mangá</div>
+            <h1>Geminomi ジ</h1>
+            <p class="subtitle">
+                Arte que une técnicas tradicionais e digitais, com foco em narrativas visuais e ensino artístico. 
+                Descubra meu trabalho, cursos e recursos gratuitos para sua jornada criativa.
+            </p>
+            <div class="actions">
+                <a class="btn btn-primary" href="#publicacoes">Ver publicações ✨</a>
+                <a class="btn btn-ghost" href="#cursos">Explorar cursos</a>
+            </div>
+        </div>
+
+        <!-- Canvas com elementos fofos -->
+        <div class="canvas" aria-hidden="true">
+            <div class="bunny">
+                <div class="bunny-face"></div>
+                <div class="bunny-eye"></div>
+                <div class="bunny-nose"></div>
+            </div>
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+        </div>
+    </main>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section-card" aria-labelledby="titulo-sobre">
+        <h2 id="titulo-sobre" class="section-title">Sobre</h2>
+        <p class="section-sub">Minha jornada artística e paixão pela criação.</p>
+        
+        <div class="section-illustration">
+            <div class="drawing">
+                <div class="cute-cat">
+                    <div class="cat-ear cat-ear-left"></div>
+                    <div class="cat-ear cat-ear-right"></div>
+                    <div class="cat-head"></div>
+                    <div class="cat-eye cat-eye-left"></div>
+                    <div class="cat-eye cat-eye-right"></div>
+                    <div class="cat-nose"></div>
+                    <div class="cat-whiskers cat-whisker-1"></div>
+                    <div class="cat-whiskers cat-whisker-2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <p>
+            Meu nome é Letícia, sou de Luziânia-GO e desenho há 9 anos. Minha jornada com arte digital iniciou em 2016, 
+            quando descobri as infinitas possibilidades de criação que a tecnologia proporciona aos artistas. 
+            Desde então, venho me dedicando ao estudo constante de diferentes técnicas e estilos, desde o desenho 
+            tradicional em papel até as mais avançadas ferramentas de ilustração digital.
+        </p>
+        <p>
+            Sou uma das instrutoras da Oficina "A arte de aprender" criada em 2023, onde tenho a oportunidade 
+            de compartilhar meu conhecimento e paixão pelo desenho com alunos de todas as idades. Acredito que 
+            a arte tem o poder de transformar vidas e conectar pessoas, e é isso que me motiva a continuar 
+            criando e ensinando.
+        </p>
+        <p>
+            Minha paixão pela arte vai além da técnica - é sobre contar histórias, expressar emoções e criar 
+            mundos que encantam e inspiram. Cada traço, cada cor escolhida, cada composição é parte de uma 
+            narrativa visual que busca tocar o coração de quem observa.
+        </p>
+    </section>
+
+    <!-- Publicações -->
+    <section id="publicacoes" aria-labelledby="titulo-publicacoes">
+        <h2 id="titulo-publicacoes" class="section-title">Publicações</h2>
+        <p class="section-sub">Meus trabalhos publicados e projetos autorais.</p>
+        <div class="grid">
+            <article class="card">
+                <span class="tag">Infantil</span>
+                <h3>João e o seu Raimundo</h3>
+                <p>Uma história sobre uma bola, um muro e uma amizade que supera obstáculos. Minha primeira história infantil publicada.</p>
+            </article>
+            <article class="card">
+                <span class="tag">Mangá</span>
+                <h3>Sala 0: Chrysocyon</h3>
+                <p>Mangá piloto onde alunos se veem presos no tempo com uma professora muito estranha. Uma prévia da série que estou desenvolvendo.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" aria-labelledby="titulo-cursos">
+        <h2 id="titulo-cursos" class="section-title">Cursos</h2>
+        <p class="section-sub">Aprenda desenho e artesanato em diferentes níveis e técnicas.</p>
+        
+        <div class="cursos-container">
+            <div class="cursos-scroll" id="cursosScroll">
+                <article class="curso-card">
+                    <span class="tag">Iniciante</span>
+                    <h3>Fundamentos Básicos do Desenho</h3>
+                    <p>Domine os princípios essenciais do desenho: formas, perspectiva, luz e sombra e composição.</p>
+                    <div class="curso-actions">
+                        <a href="cursos/fundamentos.html" class="btn btn-primary">Acessar Curso</a>
+                    </div>
+                </article>
+                
+                <article class="curso-card">
+                    <span class="tag">Intermediário</span>
+                    <h3>Desenho em Papel</h3>
+                    <p>Técnicas avançadas de desenho tradicional, explorando diferentes materiais e suportes.</p>
+                    <div class="curso-actions">
+                        <a href="cursos/desenhopapel.html" class="btn btn-primary">Acessar Curso</a>
+                    </div>
+                </article>
+                
+                <article class="curso-card">
+                    <span class="tag">Avançado</span>
+                    <h3>Arte Digital e Ilustração</h3>
+                    <p>Domine as ferramentas digitais para criação de ilustrações profissionais e desenvolvimento de estilo próprio.</p>
+                    <div class="curso-actions">
+                        <a href="cursos/artedigital.html" class="btn btn-primary">Acessar Curso</a>
+                    </div>
+                </article>
+                
+                <article class="curso-card">
+                    <span class="tag">Artesanato</span>
+                    <h3>Crochê, Amigurumi e Biscuit</h3>
+                    <p>Aprenda técnicas de crochê para criar amigurumis e modelagem em biscuit para peças decorativas únicas.</p>
+                    <div class="curso-actions">
+                        <button class="btn btn-ghost" onclick="alert('Curso em desenvolvimento!')">Em Breve</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="section-card" aria-labelledby="titulo-downloads">
+        <h2 id="titulo-downloads" class="section-title">Downloads</h2>
+        <p class="section-sub">Recursos grátis para colorir e praticar.</p>
+        <div class="downloads">
+            <div class="dl">
+                <span>Desenho 1 — Onda Bobbie Goods</span>
+                <a href="#" download>Baixar</a>
+            </div>
+            <div class="dl">
+                <span>Desenho 2 — Onda Bobbie Goods</span>
+                <a href="#" download>Baixar</a>
+            </div>
+            <div class="dl">
+                <span>Desenho 3 — Onda Bobbie Goods</span>
+                <a href="#" download>Baixar</a>
+            </div>
+            <div class="dl">
+                <span>Desenho 4 — Onda Bobbie Goods</span>
+                <a href="#" download>Baixar</a>
+            </div>
+        </div>
+        <p class="note">Dica: substitua os links "#" pelo caminho dos seus arquivos na pasta /assets.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato" class="section-title">Contato</h2>
+        <p class="section-sub">Vamos conversar sobre seu projeto ou parceria.</p>
+        <form id="contatoForm" onsubmit="handleSubmit(event)">
+            <div>
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+            </div>
+            <div class="full">
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Sobre o que vamos falar?" required>
+            </div>
+            <div class="full">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Me conte sua ideia..." required></textarea>
+            </div>
+            <div class="full form-actions">
+                <button class="btn btn-primary" type="submit">Enviar mensagem ✉️</button>
+                <a class="btn btn-ghost" href="mailto:contato@geminomi.com">Enviar por e-mail</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Geminomi ジ - Todos os direitos reservados
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
